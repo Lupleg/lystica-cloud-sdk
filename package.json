@@ -1,0 +1,69 @@
+{
+  "name": "lystica-cloud",
+  "version": "0.1.0",
+  "description": "Official Node.js & TypeScript SDK for the Lystica Cloud API — access professional contacts, companies, email campaigns, and lists programmatically.",
+  "author": "Lystica <support@lystica.cloud>",
+  "license": "MIT",
+  "homepage": "https://lystica.cloud/developer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lystica/lystica-cloud-sdk"
+  },
+  "bugs": {
+    "url": "https://github.com/lystica/lystica-cloud-sdk/issues"
+  },
+  "keywords": [
+    "lystica",
+    "lystica-cloud",
+    "contacts",
+    "companies",
+    "api",
+    "sdk",
+    "email-marketing",
+    "b2b",
+    "leads",
+    "crm",
+    "enrichment"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "sideEffects": false
+}

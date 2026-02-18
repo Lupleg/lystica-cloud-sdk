@@ -1,0 +1,49 @@
+{
+  "name": "lystica-cloud",
+  "version": "0.1.0",
+  "description": "Official SDK for the Lystica Cloud API — access professional contacts programmatically.",
+  "author": "Lystica <support@lystica.cloud>",
+  "license": "MIT",
+  "homepage": "https://lystica.cloud/developer",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lystica/lystica-cloud-sdk"
+  },
+  "keywords": [
+    "lystica",
+    "contacts",
+    "api",
+    "sdk",
+    "email-marketing",
+    "b2b",
+    "leads"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
