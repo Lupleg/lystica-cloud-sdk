@@ -1,4 +1,4 @@
-# lystica-cloud
+# Lystica-Cloud
 
 Official Node.js & TypeScript SDK for the [Lystica Cloud](https://lystica.cloud) API.
 
