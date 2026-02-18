@@ -2,15 +2,15 @@
   "name": "lystica-cloud",
   "version": "0.1.0",
   "description": "Official Node.js & TypeScript SDK for the Lystica Cloud API — access professional contacts, companies, email campaigns, and lists programmatically.",
-  "author": "Lystica <support@lystica.cloud>",
+  "author": "Lystica <luplegstudios@gmail.com>",
   "license": "MIT",
   "homepage": "https://lystica.cloud/developer",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lystica/lystica-cloud-sdk"
+    "url": "https://github.com/Lupleg/lystica-cloud-sdk"
   },
   "bugs": {
-    "url": "https://github.com/lystica/lystica-cloud-sdk/issues"
+    "url": "https://github.com/Lupleg/lystica-cloud-sdk/issues"
   },
   "keywords": [
     "lystica",
